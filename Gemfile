@@ -8,6 +8,8 @@ gem 'rails', '3.1.3'
 gem 'pg'
 gem 'json'
 
+gem 'execjs' 
+gem 'therubyracer', '= 0.10.0'
 gem 'haml'
 gem 'devise'
 gem 'kaminari'
@@ -20,6 +22,7 @@ group :development, :test do
   gem 'ruby_parser'
   gem 'web-app-theme'
 end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
