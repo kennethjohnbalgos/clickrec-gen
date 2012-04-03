@@ -11,7 +11,7 @@ class AnalyticPage < ActiveRecord::Base
   end
   
   def self.getDomain(url)
-    domain = URI.parse(url).host
+    domain = URI.parse(URI.encode(url)).host
     domain.split('.').size == 2 ? "www.#{domain}" : "#{domain}"
   end
   
